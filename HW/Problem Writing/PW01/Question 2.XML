@@ -1,0 +1,87 @@
+<question>
+<title>Tiles</title>
+<type>JavaCode</type>
+<points>2</points>
+<text>
+Define a method called tiles, that takes Turtle t, double sides, double num as inputs, and draw the tile design as following: (The side of the triangle is 20). 
+</text>
+<figure>
+iVBORw0KGgoAAAANSUhEUgAAAFsAAABNCAIAAABG249IAAADJUlEQVR4Xu2SWW4DMQxD5/6XboE4
+NRTRpOV9muR9ZWhSG3L93JLrury0i2ONBekcp45ypqvme5EX7CGOHOVAS833Ii/gCVBZze5+ArY8
+0xextZmGbc70RWxtJtBr69e57Ouk0Tvr17ns6ySILBzxTGFTG01k24hnCpvaCOKrxp0j7OghaF2y
+1d/B8gaa1g1b/R0sbyDoW68vFWdtdU3fbn2pOGurC64xfLl5LCwtSCv1LTaSjbCqrmZkq5FshFV1
+BXaZ1sVGskGWFNWMbDWSDbKkqADXQIWBTlTGmV9RcD3wamwx5mF6N5PLadj0TLcwD9O7mVxOoEdf
+99rKzFoaPfe611Zm1hJEhmYeplsiniDTCmkiEzMP0y0RT5BphQTxcdGJCiPu1MypImgd1PpHst1M
+KKFpnfLNL9I3YkqNZEcYzWv65nvbi1zn8KO0MBQWjAyXUvuzif6kZmSyU9lEf1JgB2od7lQ20xnT
+jEx2KpvpjAlwFFQY6ESFgU5UIvRkNDgHKgx0osJAJyoRejICNgTTLczDdAvzMF3QHNCwCZhuYR6m
+W5iH6YLmgEC3v+cr0uYWRBozD9MtzMN0S8STabBqIl2Zh+kW5mG6JeLJNFgF8ZboRIWBTlQYDU4v
+dNHQD5yoMNCJCqPB6YV24s0S1n8qKwiZNMFOmVlbjWQFIZMg2MaRUqeymrpDcD3waoDxrUaymrpD
+kC7y7/BrvFJ5FqTS1QZF7pxVb5pIdcads+pNYIvqBsjNs/RBcD2wn+axzs2z9EGA5VBhoBMVBjpR
+YaATlURZFdBCRLcwD9MtzMN0C/MU9YKkKVb54bqFeZhuYR6mW5inqBckQbFE5j1e/bcG85b3eL0S
+Ti0SsTEP0y3Mw3QL8zDd4jzPczwPw/P6NcM8TLcwD9MtzMN0i/P4PdPmWAgVBjpRYaATFQY6UWFY
+Z2H5hL0L8zBcA/NS53iWXiSR7qI9yJTJ3O8IU7L1bZPh7zIVcyan/EOA49lK2Bn+LhNKVW1FjmdV
+OO//WfgzSPpS/4jobm9/iEx9yQ85RIZu+zl/Coff+WMPkXku/z1E5nsIzy93kPgYz+PMlAAAAABJ
+RU5ErkJggg==
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+        Turtle bob = new Turtle();
+        tiles(bob, 20, 4);
+        bob.backward(20);
+        bob.left(60);
+        bob.forward(20);
+        bob.right(60);
+        tiles(bob, 20, 3);
+        bob.backward(20);
+        bob.left(60);
+        bob.forward(20);
+        bob.right(60);
+        tiles(bob, 20, 2);
+        bob.backward(20);
+        bob.left(60);
+        bob.forward(20);
+        bob.right(60);
+        tiles(bob, 20, 1);
+        bob.backward(20);
+        bob.left(60);
+        bob.backward(60);
+        bob.right(60);
+    }
+
+    public static void tiles(Turtle t, double sides, double num) {
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < 3; j++) { 
+                t.forward(sides);
+                t.left(120);
+            }
+            t.forward(sides);
+        }
+        for (int i = 0; i < (num -1); i++) {
+            t.backward(sides);
+            t.left(60);
+            for (int j = 0; j < 3; j++) { 
+                t.forward(sides);
+                t.left(120);
+            }
+            t.right(60);
+        }
+    }
+}
+</answer>
+</question>

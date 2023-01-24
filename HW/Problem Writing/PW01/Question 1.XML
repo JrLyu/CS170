@@ -1,0 +1,72 @@
+<question>
+<title>Bookshelf</title>
+<type>JavaCode</type>
+<points>2</points>
+<text>
+Define a method called book that takes three inputs: Turtle t, double length and double width to use Turtle to draw a book with length and width of your choice. Define a method called shelf to draw a 100x50 rectangle. In your main method, use the two methods you defined, draw the following diagram: 
+(The sizes of the books are: 20x16, 40x24, 35x12, 15x13, 25x10, 13x15, respectively.)
+</text>
+<figure>
+iVBORw0KGgoAAAANSUhEUgAAAG8AAAA6CAIAAAAx5JBzAAAByklEQVR4Xu2S227CUAwE+f+fdhXl
+cHPw7jq1KBU7T1V2YmDUS0AupkXu9wwVzA3XnMQ1J3HNSVxzEtecxDUncc1JXHOS+ZrbxSHy6Y+H
+f2kqJLp+xdSdd+Kak7jmJK45yUfXVMiv/Sn8C1Eh0fUrlDuK805ccxLXnMQ1J3HNSVxzEtecxDUn
+cc1JvqLm9iMh+YWz8FtUSHT9CuWO4gTT8NrCNcnawjXJ2sI1ydpCqtklnziFckdxgml4bcF/PBUS
+Xb9CuaM4wTS8tnBNsrZwTbK2cE2ytvj3NUXymw/gtQX5pOh/WNevUO4oTjANry1cs/EPvpPff4DM
+wb7Kka5fodxRnGAaXhNYdk2yJrDsmmRNYNk1yZrAsmuSNYHlreZOXq6A6SVdv0K5ozjBNLwmsHxP
+uf462McnmK5fodxRnGAaXhNYflFwPbo+xO8f6foVyh3FCabhNYHlp3CJtRVrRdevUO4oTjANrwks
+817LgM4juolR7ihOMA2vCSzzUrd1qVAO9nk6yh3FCabhNYFlHui4rncOz3eq512UO4oTTMNrAsuo
+y84yjE5OCDn31pegdnFEBR7IEXXKUv5nPEHu5Yi/YYVzxBEccZIfoRkFt0yXb0sAAAAASUVORK5C
+YII=
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+        Turtle bob = new Turtle();
+        shelf(bob);
+        book(bob, 20, 16);
+        book(bob, 40, 24);
+        book(bob, 35, 12);
+        book(bob, 15, 13);
+        book(bob, 25, 10);
+        book(bob, 13, 15);
+        bob.backward(90);
+    }
+
+    public static void shelf(Turtle t) {
+        for (int i = 0; i < 2; i++) {
+            t.forward(100);
+            t.left(90);
+            t.forward(50);
+            t.left(90);
+        }
+    }
+
+    public static void book(Turtle t, double length, double width) {
+        for (int i = 0; i < 2; i++) {
+            t.forward(width);
+            t.left(90);
+            t.forward(length);
+            t.left(90);
+        }
+        t.forward(width);
+    }
+        
+    
+}
+</answer>
+</question>
