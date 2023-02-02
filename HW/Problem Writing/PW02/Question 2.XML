@@ -1,0 +1,37 @@
+<question>
+<title>Double Converter</title>
+<type>JavaCode</type>
+<points>2</points>
+<text>
+Write a method called DoubleConvert that takes one input int x and convert it into the double variable type.  Test your method in the main method by calling one int variable a. Assign a to be 10, and print the result. 
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static double DoubleConvert(int x) {
+        return (double)x;
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        int a = 10;
+        System.out.println(DoubleConvert(a));
+    }
+
+}
+</answer>
+</question>

@@ -1,0 +1,38 @@
+<question>
+<title>Addition Calculator</title>
+<type>JavaCode</type>
+<points>1</points>
+<text>
+Write a method called AdditionCalc that takes two inputs int x and int y and return the sum of x and y. Test your method in the main method by calling two variables a and b. Assign a to be 10 and b to be 90, and print the result. 
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static int AdditionCalc(int x, int y) {
+        return x + y;
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        int a = 10;
+        int b = 90;
+        System.out.println(AdditionCalc(10, 90));
+    }
+
+}
+</answer>
+</question>
