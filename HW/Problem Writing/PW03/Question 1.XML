@@ -1,0 +1,41 @@
+<question>
+<title>Summation of Odd Numbers</title>
+<type>JavaCode</type>
+<points>2</points>
+<text>
+Write a method called sumOdd(int n) that calculates the sum of all positive odd integers up to n. Test your method using sumOdd(5) and sumOdd(10), and the expected result should be 9 and 25, respectively. 
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static int sumOdd(int n) {
+        int result = 0;
+        for (int i = 1; i <= n; i += 2) {
+            result += i;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        System.out.println(sumOdd(5));
+        System.out.println(sumOdd(10));
+    }
+
+}
+</answer>
+</question>
