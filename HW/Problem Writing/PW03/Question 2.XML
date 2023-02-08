@@ -1,0 +1,52 @@
+<question>
+<title>The Largest Number</title>
+<type>JavaCode</type>
+<points>3</points>
+<text>
+Write a method called largestNum(double a, double b, double c) that will return a double of the largest number among the three. (Hint: you can use nested conditionals.) 
+Use a = 10, b = 30, c = 0 to test your method, the result should return 30.0. Also try a = 0, b = 10, c = 30 and a = 30, b = 0, c = 10, and the result should also be 30.0
+Note: use < or > when dealing with edge cases. 
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static double largestNum(double a, double b, double c) {
+        if (a < b) {
+            if (b < c) {
+                return c;
+            } else {
+                return b;
+            }
+        } else {
+            if (a < c) {
+                return c;
+            } else {
+                return a;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        System.out.println(largestNum(10, 30, 0));
+        System.out.println(largestNum(0, 10, 30));
+        System.out.println(largestNum(30, 0, 10));
+    }
+
+}
+</answer>
+</question>
