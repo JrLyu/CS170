@@ -116,7 +116,7 @@ System.out.println(5 / 3); // 1 (int)
 double / double = double
 ```
 ```java
-System.out.println(5.0 + 2.0); // 2.5 (double)
+System.out.println(5.0 / 2.0); // 2.5 (double)
 ```
 - Double - Integer Division
 ```
