@@ -1,0 +1,41 @@
+<question>
+<title>ID Generator</title>
+<type>JavaCode</type>
+<points>2</points>
+<text>
+Write a method idGenerator(String name) that takes the name of somebody and turns their name to an integer following the ASCII Table. Test your method using a) Your own name and b) the name "Jack", and the result should be 377.
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static int idGenerator(String name) {
+        int result = 0;
+        for (int i = name.length()-1; i >=0; i--) {
+            result += (int)(char)(name.charAt(i));
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        System.out.println(idGenerator("Your Name"));
+        System.out.println(idGenerator("Jack"));
+    }
+
+}
+</answer>
+</question>

@@ -1,0 +1,44 @@
+<question>
+<title>Interest at a Year</title>
+<type>JavaCode</type>
+<points>2</points>
+<text>
+Use the while loop to write a method called interest(double interestRate, double initialMoney, int years) that calculates the interest you receive after some year specified, rounded to the nearest dollars. Test your method using interest(0.45, 1000, 10), and the result should be 58573.0.
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static double interest(double interestRate, double initialMoney, int years) {
+        double totalMoney = initialMoney;
+        double interestMoney = 0;
+        int i = 0;
+        while (i <= years) {
+            totalMoney *= 1 + interestRate;
+            interestMoney = totalMoney - initialMoney;
+            i += 1;
+        }
+        return Math.round(interestMoney);
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        System.out.println(interest(0.45, 1000, 10));
+    }
+
+}
+</answer>
+</question>
