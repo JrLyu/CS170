@@ -7,3 +7,8 @@ HW/Problem Writing/.DS_Store
 Lecture Notes/.DS_Store
 .DS_Store
 HW/.DS_Store
+*.jar
+HW/qtest/lib/client.policy
+HW/qtest/qtest-mac.command
+HW/qtest/qtest-windows.bat
+HW/qtest/README.txt
