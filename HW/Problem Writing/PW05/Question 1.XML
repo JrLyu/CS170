@@ -1,0 +1,40 @@
+<question>
+<title>Product of an Array</title>
+<type>JavaCode</type>
+<points>1</points>
+<text>
+Write a method arrayProduct(int[] x) that takes an array x as an input and returns the product of every elements of the array x. Test your code with arrayProduct(new int[]{10, 9, 8}). The result should be 720.
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static int arrayProduct(int[] x) {
+        int result = 1;
+        for (int i = 0; i < x.length; i++) {
+            result *= x[i];
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        System.out.println(arrayProduct(new int[]{10, 9, 8}));
+    }
+
+}
+</answer>
+</question>
