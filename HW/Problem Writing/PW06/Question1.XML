@@ -1,0 +1,45 @@
+<question>
+<title>Sum of a Matrix</title>
+<type>JavaCode</type>
+<points>1</points>
+<text>
+Write a method sum(double[][] x, int n, int m) that takes a 2D array x with n rows and m columns. It will return the summation of the values of the entries of x. Test your code using a matrix of your choice.
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static int sum(double[][] x, int n, int m) {
+        int result = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                result += x[i][j];
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        double[][] w = new double[][]{{15, 25, 35}, {45, 55, 65}};
+        System.out.println(sum(w, 2, 3)); // 240
+        double[][] v = new double[][]{}; // empty matrix
+        System.out.println(sum(v, 0, 0)); // 0
+    }
+
+}
+</answer>
+</question>

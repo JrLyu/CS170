@@ -1,0 +1,59 @@
+<question>
+<title>Identity Matrix</title>
+<type>JavaCode</type>
+<points>2</points>
+<text>
+A matirx is called an identity matrix of dimension n if the diagonal of it is 1 and it has 0s elsewhere. For example, the code 
+
+    double[][] i4 = new double[][] {{1, 0, 0, 0}, 
+                                    {0, 1, 0, 0}, 
+                                    {0, 0, 1, 0}, 
+                                    {0, 0, 0, 1}}; 
+
+defines an identity matrix of dimension 4. 
+
+Write a method isIdentity(double[][] x, int n) to test if the matrix is a identity matrix. Return true if it is an indentity matrix. Test your code with two test cases of your choice. 
+</text>
+<figure>
+</figure>
+<init>
+public class X {
+
+    // write your code here
+
+    public static void main(String[] args) {
+        // test your code here
+    }
+
+}
+</init>
+<answer>
+public class X {
+
+    // write your code here
+    public static boolean isIdentity(double[][] x, int n) {
+        boolean result = true;
+        for (int i = 0; i < n; i++) {
+            if (x[i][i] != 1) {
+                result = false;
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // test your code here
+        double[][] i4 = new double[][] {{1, 0, 0, 0}, 
+                                        {0, 1, 0, 0}, 
+                                        {0, 0, 1, 0}, 
+                                        {0, 0, 0, 1}};
+        System.out.println(isIdentity(i4, 4)); // true
+        double[][] myMatrix = new double[][] {{1, 0, 0}, 
+                                              {0, 1, 1},
+                                              {0, 0, 0}};
+        System.out.println(isIdentity(myMatrix, 3)); // false
+    }
+
+}
+</answer>
+</question>
