@@ -12,3 +12,5 @@ HW/qtest/lib/client.policy
 HW/qtest/qtest-mac.command
 HW/qtest/qtest-windows.bat
 HW/qtest/README.txt
+.DS_Store
+HW/.DS_Store

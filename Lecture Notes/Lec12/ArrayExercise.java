@@ -21,7 +21,6 @@ public class ArrayExercise {
         int q = remove(t, 5, 1);
         System.out.println("After remove: "); 
         System.out.println("q: " + q + "; t: " + arrayToString(t, 4));// 3; [5, 10, 7, 9]
-
     }
 
     /**
