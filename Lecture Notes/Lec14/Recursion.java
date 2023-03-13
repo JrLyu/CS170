@@ -69,11 +69,9 @@ public class Recursion {
     public static boolean isPallindrome(String s) {
         if (s.length() <= 1) { // define the base cases
             return true;
-        } else if (s.charAt(0) == s.charAt(s.length() - 1) && 
-                   isPallindrome(s.substring(1, s.length() - 1))) {
-            return true;
-        } else {
-            return false;
+        } else { // the recursion part
+            return s.charAt(0) == s.charAt(s.length() - 1) && 
+                   isPallindrome(s.substring(1, s.length() - 1));
         }
     }
 }
